@@ -1,0 +1,145 @@
+BEGIN TRANSACTION;
+CREATE TABLE "Weapons" (
+	`Name`	TEXT,
+	`WeaponType`	TEXT,
+	`UpgradePath`	TEXT,
+	`PhysicalDamage`	INTEGER,
+	`MagicDamage`	INTEGER,
+	`FireDamage`	INTEGER,
+	`LightningDamage`	INTEGER,
+	`RegularDamage`	INTEGER,
+	`StrikeDamage`	INTEGER,
+	`SlashDamage`	INTEGER,
+	`ThrustDamage`	INTEGER,
+	`Range`	INTEGER,
+	`BleedDamage`	INTEGER,
+	`BleedPerHit`	INTEGER,
+	`PoisonDamage`	INTEGER,
+	`HolyDamage`	INTEGER,
+	`OccultDamage`	INTEGER,
+	`Critical`	INTEGER,
+	`Durability`	INTEGER,
+	`Weight`	REAL,
+	`StrengthRequirement`	INTEGER,
+	`DexRequirement`	INTEGER,
+	`IntRequirement`	INTEGER,
+	`FaithRequirement`	INTEGER,
+	`StrengthBonus`	TEXT,
+	`DexBonus`	TEXT,
+	`IntBonus`	TEXT,
+	`FathBonus`	TEXT,
+	`PhysicalReduction`	INTEGER,
+	`MagicReduction`	INTEGER,
+	`FireReduction`	INTEGER,
+	`LightningReduction`	INTEGER,
+	`BleedResistReduction`	INTEGER,
+	`PoisonResistReduction`	INTEGER,
+	`ToxicResistReduction`	INTEGER,
+	`CurseResistReduction`	INTEGER,
+	`Stability`	INTEGER,
+	`SoulValue`	INTEGER,
+	`PurchaseCost`	INTEGER,
+	`Notes`	TEXT
+);
+CREATE TABLE `Armor` (
+	`Name`	TEXT,
+	`Armor ype`	TEXT,
+	`ArmorSet`	INTEGER,
+	`UpgradeType`	TEXT,
+	`NormalDefense`	INTEGER,
+	`StrikingDefense`	INTEGER,
+	`SlashingDefense`	INTEGER,
+	`ThrustingDefense`	INTEGER,
+	`MagicDefense`	INTEGER,
+	`FireDefense`	INTEGER,
+	`LightningDefense`	INTEGER,
+	`BleedResistance`	INTEGER,
+	`PoisonResistance`	INTEGER,
+	`Curse Resistance`	INTEGER,
+	`Poise`	INTEGER,
+	`Durability`	INTEGER,
+	`Weight`	INTEGER,
+	`SoulValue`	INTEGER,
+	`PurchaseCost`	INTEGER,
+	`Notes`	TEXT
+);
+INSERT INTO `Armor` VALUES ('Brigand Armor','Chest Armor','Brigand Set','N','23','25.3','23','20.7','20','13','17','20','20',NULL,'0','200','3.1','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Brigand Gauntlets','Hands Armor','Brigand Set','N','14','15.4','14','12.6','12','8','10','12','12',NULL,'0','200','1.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Brigand Trousers','Legs Armor','Brigand Set','N','14','15.4','14','12.6','12','8','10','12','12',NULL,'0','200','1.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Brigand Hood
+','Head Armor','Brigand Set','N','9','9.9','9','8.1','8','5','6','8','8',NULL,'0','200','1.2','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Priest''s Hat','Head Armor','Holy Set','N','8','9.4','8','8','9','5','7','9','8',NULL,'0','350','1.2','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Holy Robe','Chest Armor','Holy Set','N','22','26','22','22','23','14','19','24','20',NULL,'0','350','4','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Traveling Gloves','Hands Armor','Holy Set','N','5','5.9','5','5','5','3','4','5','4',NULL,'0','350','0.7','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Holy Trousers','Legs Armor','Holy Set','N','14','17','14','14','15','8','12','15','13',NULL,'0','350','2','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Pharis''s Hat','Head Armor','Hunter Set','N','7','7.4','7','7','5','7','6','6','5',NULL,'0','250','1.2','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Leather Armor','Chest Armor','Hunter Set','N','24','25.4','24','24','20','12','23','21','20',NULL,'0','250','4.7','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Leather Gloves','Hands Armor','Hunter Set','N','12','12.7','12','12','12','6','13','13','12',NULL,'0','250','2.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Leather Boots','Legs Armor','Hunter Set','N','12','12.7','12','12','12','6','13','13','12',NULL,'0','250','2.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Knight Helm','Head Armor','Knight Set','N','14','13.3','16.2','13.7','6','8','5','9','6',NULL,'8','400','4.2','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Knight Armor','Chest Armor','Knight Set','N','37','35','43','36','16','18','13','23','16',NULL,'20','400','10.9','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Knight Gauntlets','Hands Armor','Knight Set','N','17','16.1','19.7','16.7','7','8','4','8','5',NULL,'6','400','3.5','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Knight Leggings','Legs Armor','Knight Set','N','22','20.9','25.5','21.6','10','11','8','14','9',NULL,'12','400','6.4','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Tattered Cloth Hood','Head Armor','Pyromancer Set','N','8','8.9','8','8','9','12','6','9','23','1','0','400','1.1','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Tattered Cloth Robe','Chest Armor','Pyromancer Set','N','21','23.3','21','21','23','30','17','23','59','2','0','400','2.7','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Tattered Cloth Manchette','Hands Armor','Pyromancer Set','N','12','13','12','12','14','18','10','14','35','1','0','400','1.6','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Heavy Boots','Legs Armor','Pyromancer Set','N','12','13.3','12','12','14','18','10','14','35','1','0','400','1.6','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Sorcerer Hat','Head Armor','Sorcerer Set','N','8','8.6','8.3','8','10','5','6','6','5',NULL,'0','200','0.9','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Sorcerer Cloak','Chest Armor','Sorcerer Set','N','20','21.6','20.8','20','27','13','17','16','12',NULL,'0','200','2.3','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Sorcerer Gauntlets','Hands Armor','Sorcerer Set','N','12','13','12.5','12','16','8','10','9','7',NULL,'0','200','1.4','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Sorcerer Boots','Legs Armor','Sorcerer Set','N','12','13','12.5','12','16','8','10','9','7',NULL,'0','200','1.4','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Thief Mask','Head Armor','Thief Set','N','9','9.6','9','9','8','5','6','9','12',NULL,'0','250','1.2','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Leather Armor','Chest Armor','Thief Set','N','23','24.6','23','23','20','14','16','23','31',NULL,'0','250','3.1','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Leather Gloves','Hands Armor','Thief Set','N','13','13.9','13','13','12','8','9','14','18',NULL,'0','250','1.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Leather Boots','Legs Armor','Thief Set','N','12','12.8','12','12','19','13','15','23','31',NULL,'0','250','3','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Wanderer Hood','Head Armor','Wanderer Set','N','9','9.6','9.6','9','8','10','9','8','8',NULL,'0','400','1.4','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Wanderer Coat','Chest Armor','Wanderer Set','N','23','24.6','24.6','23','21','26','23','21','21',NULL,'0','400','3.5','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Wanderer Manchette','Hands Armor','Wanderer Set','N','14','15','15','14','12','15','13','13','13',NULL,'0','400','2.1','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Wanderer Boots','Legs Armor','Wanderer Set','N','14','15','15','14','12','15','13','13','13',NULL,'0','400','2.1','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Standard Helm','Head Armor','Warrior Set','N','14','8','16','14','8','8','3','9','8',NULL,'5','250','3.5','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Hard Leather Armor','Chest Armor','Warrior Set','N','26','27.6','26','26','20','13','23','23','20',NULL,'0','250','5.9','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Hard Leather Gauntlets','Hands Armor','Warrior Set','N','13','13.8','13','13','12','7','13','14','12',NULL,'0','250','3.5','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Hard Leather Boots','Legs Armor','Warrior Set','N','13','13.8','13','13','12','7','13','14','12',NULL,'0','250','3.5','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Crown of Dusk','Head Armor','Antiquated Set','T','5','5','5','5','11','2','6','5','5','20','0','150','0.4','0',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Antiquated Dress','Chest Armor','Antiquated Set','T','14','14','14','14','33','6','19','14','14','26','0','150','1','1,000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Antiquated Gloves','Hands Armor','Antiquated Set','T','8','8','8','8','19','3','11','8','8','16','0','150','0.6','1,000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Antiquated Skirt','Legs Armor','Antiquated Set','T','15','15','15','15','35','17','21','20','20','51','0','150','3','1,000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Big Hat','Head Armor','Big Hat''s Set','T','14','15.4','15.4','12.6','43','7','17','13','13',NULL,'0','250','3','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Sage Robe','Chest Armor','Big Hat''s Set','T','41','44.3','42.6','41','28','29','35','49','49',NULL,'0','250','4','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Traveling Gloves','Hands Armor','Big Hat''s Set','T','12','13','12.5','12','16','8','10','14','14',NULL,'0','250','1.6',NULL,NULL,NULL);
+INSERT INTO `Armor` VALUES ('Traveling Boots','Legs Armor','Big Hat''s Set','T','12','13','12.5','12','16','8','10','14','14',NULL,'0','250','1.6','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Mask of Velka','Head Armor','Black Set','T','12','13.1','12','12','12','10','7','9','9','20','0','400','2.5','?',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Cleric Robe','Chest Armor','Black Set','T','23','25.1','23','23','29','25','19','22','22','13','0','400','3.9','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Manchette','Hands Armor','Black Set','T','11','12','11','11','14','11','9','10','10','5','0','400','1.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Tights','Legs Armor','Black Set','T','16','17.4','16','16','22','17','13','15','15','9','0','400','1.8',NULL,NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Sorcerer Hat','Head Armor','Black Sorcerer Set','N','5','5.1','5.5','5','11','8','8','12','12','2','0','200','0.7','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Sorcerer Cloak','Chest Armor','Black Sorcerer Set','N','13','13.4','14.2','13','28','21','21','31','31','4','0','200','1.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Sorcerer Guantlets ','Hands Armor','Black Sorcerer Set','N','8','8.2','8.7','8','17','12','12','18','18','2','0','200','1','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Black Sorcerer Boots','Legs Armor','Black Sorcerer Set','N','8','8.2','8.7','8','17','12','12','18','18','2','0','200','1','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Chain Helm','Head Armor','Chain Set','N','12','12','14.4','11.6','10','8','3','10','6',NULL,'5','300','3','100','800',NULL);
+INSERT INTO `Armor` VALUES ('Chain Armor','Chest Armor','Chain Set','N','30','30','36','29.1','21','16','7','20','12',NULL,'9','300','6','100','800',NULL);
+INSERT INTO `Armor` VALUES ('Leather Gauntlets','Hands Armor','Chain Set','N','12','12','14.4','11.6','10','8','4','12','7',NULL,'5','300','3.5','100','800',NULL);
+INSERT INTO `Armor` VALUES ('Chain Leggings','Legs Armor','Chain Set','N','18','18','21.6','17.5','14','12','5','15','9',NULL,'7','300','4.6','100','800',NULL);
+INSERT INTO `Armor` VALUES ('Snickering Top Hat','Head Armor','Chester''s Set','T','12','16.2','12','12','13','9','12','19','14',NULL,'0','300','2','-',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Chester''s Long Coat','Chest Armor','Chester''s Set','T','27','35.5','27','27','30','21','28','44','32',NULL,'0','300','4.5','-',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Chester''s Gloves','Hands Armor','Chester''s Set','T','10','13.5','10','10','10','7','10','15','11',NULL,'0','300','1.5',' -',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Chester''s Trousers','Legs Armor','Chester''s Set','T','19','25.6','19','19','21','15','20','31','23',NULL,'0','300','3.2','-',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Mask of the Sealer','Head Armor','Crimson Set','T','12','13.2','12','12','12','7','9','8','8','8','0','400','1.5','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Crimson Robe','Chest Armor','Crimson Set','T','32','35.2','32','32','33','19','24','21','21','21','0','400','3.9','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Crimson Gloves','Hands Armor','Crimson Set','T','7','7.7','7','7','7','4','5','4','4','4','0','400','0.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Crimson Waistcloth','Legs Armor','Crimson Set','T','29','31.9','29','29','29','17','21','19','19','19','0','400','3.5','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Dingy Hood','Head Armor','Dingy Set','N','6','7.5','6','6','8','5','6','9','7','9','0','150','0.8','1000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Dingy Robe','Chest Armor','Dingy Set','N','23','28.7','23','23','33','19','25','35','26','35','0','150','3','1000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Dingy Gloves','Hands Armor','Dingy Set','N','9','11.2','9','9','13','8','10','14','10','14','0','150','1.2','1000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Blood-Stained Skirt','Legs Armor','Dingy Set','N','13','16.3','13','13','27','16','21','29','22','29','0','150','2.5','1000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Gold-Hemmed Black Hood','Head Armor','Gold-Hemmed Black Set',NULL,'11','11.8','11','11','15','22','8','16','36','0','0','400','1.4','1000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Gold-Hemmed Black Cloak','Chest Armor','Gold-Hemmed Black Set',NULL,'31','33.2','31','31','38','58','21','40','94','0','0','400','3.5','1000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Gold-Hemmed Black Gloves','Hands Armor','Gold-Hemmed Black Set',NULL,'12','12.8','12','12','13','24','8','14','32',NULL,'0','400','1.2','1000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Gold-Hemmed Black Skirt','Legs Armor','Gold-Hemmed Black Set',NULL,'23','24.6','23','23','27','49','17','32','78',NULL,'0','400','3','1000',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Crown of the Great Lord','Head Armor','Great Lord Set',NULL,'16','17.3','18.4','14.7','16','21','21','15','18','20','0','800','3','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Robe of the Great Lord','Chest Armor','Great Lord Set',NULL,'32','35','37','29','32','41','41','30','15','40','0','400','6','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Bracelet of the Great Lord','Hands Armor','Great Lord Set',NULL,'15','16.2','17.3','13.8','15','19','19','14','7','18','0','400','2.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Anklet of the Great Lord','Legs Armor','Great Lord Set',NULL,'15','16.2','17.3','13.8','15','19','19','14','7','18','0','400','2.8','100',NULL,NULL);
+INSERT INTO `Armor` VALUES ('Hollow Soldier Helm','Head Armor','Hollow Soldier Set',NULL,'10','10','11.1','8.8','6','6','4','7','5',NULL,'5','200','3','200','100',NULL);
+INSERT INTO `Armor` VALUES (NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL);
+COMMIT;
